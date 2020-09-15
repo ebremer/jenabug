@@ -4,11 +4,8 @@
 	],
 	"@graph": [
 		{
-			"@id": "blam.ttl",
-			"@type": "CreativeWork",
-			"about": {
-				"@id": "./another/local/3223423423"
-			}
+			"@id": "another/local/3223423423/blam.ttl",
+			"@type": "CreativeWork"
 		},
 		{
 			"@type": "CreativeWork",
