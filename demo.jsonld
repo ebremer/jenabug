@@ -1,0 +1,24 @@
+{
+	"@context": [
+		"https://w3id.org/ro/crate/1.0/context"
+	],
+	"@graph": [
+		{
+			"@id": "blam.ttl",
+			"@type": "CreativeWork",
+			"about": {
+				"@id": "./another/local/3223423423"
+			}
+		},
+		{
+			"@type": "CreativeWork",
+			"@id": "ro-crate-metadata.jsonld",
+			"conformsTo": {
+				"@id": "https://w3id.org/ro/crate/1.0"
+			},
+			"about": {
+				"@id": "./"
+			}
+		}
+	]
+}
