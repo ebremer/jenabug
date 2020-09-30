@@ -1,0 +1,9 @@
+<http://me.com>  <http://zam.com/ns/cheesey> "WOW" .
+#<http://me.com>  <http://zam.com/ns/cheesey>  ( "png" "jpg" "tif" "gif" ) .
+<http://notme.com> <http://zam.com/ns/cheesey>  ( "png" "jpg" "tif" "gif" ) .
+
+<http://www.twotowers.com/a>
+        <http://shadowfax.com/ns/height>
+                "262144"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://shadowfax.com/ns/width>
+                "262144"^^<http://www.w3.org/2001/XMLSchema#int> .

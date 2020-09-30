@@ -19,9 +19,13 @@ public class Bug8313 {
     public static void main(String[] args) throws FileNotFoundException {
         Model m = ModelFactory.createDefaultModel();
         InputStream inputStream = new FileInputStream("demo.jsonld");
-        RDFParser.create().base("https://demo.com").source(inputStream).lang(RDFLanguages.JSONLD).parse(m);
+        RDFParser.create()
+                .base("https://demo.com/")
+                .source(inputStream)
+                .lang(RDFLanguages.JSONLD)
+                .parse(m);
         System.out.println("Number of triples : "+m.size());
-        RDFDataMgr.write(System.out, m, Lang.NQUADS);
+        RDFDataMgr.write(System.out, m, Lang.TTL);
     }
     
 }
