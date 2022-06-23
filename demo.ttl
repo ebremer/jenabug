@@ -1,5 +1,5 @@
 <http://me.com>  <http://zam.com/ns/cheesey> "WOW" .
-#<http://me.com>  <http://zam.com/ns/cheesey>  ( "png" "jpg" "tif" "gif" ) .
+<http://me.com>  <http://zam.com/ns/cheesey>  ( "png" "jpg" "tif" "gif" ) .
 <http://notme.com> <http://zam.com/ns/cheesey>  ( "png" "jpg" "tif" "gif" ) .
 
 <http://www.twotowers.com/a>
