@@ -35,11 +35,13 @@ public class JSONLDBUG {
         opts.setCompactArrays(true);
         opts.setPruneBlankNodeIdentifiers(true);
         opts.setUseNativeTypes(Boolean.TRUE);
+        opts.setBase("http://www.twotowers.com");
         JsonLDWriteContext ctx = new JsonLDWriteContext();        
         ctx.setOptions(opts);
         RDFWriter w =
             RDFWriter.create()
-            .format(RDFFormat.JSONLD_COMPACT_PRETTY)
+            .base(null)
+            .format(RDFFormat.JSONLD11_PRETTY)
             .source(m)
             .context(ctx)
             .build();

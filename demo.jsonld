@@ -1,6 +1,6 @@
 {
 	"@context": [
-		"https://w3id.org/ro/crate/1.0/context"
+		"https://w3id.org/ro/crate/1.1/context"
 	],
 	"@graph": [
 		{
@@ -8,10 +8,14 @@
 			"@type": "CreativeWork"
 		},
 		{
+			"@id": "another/local/noextension/snowball",
+			"@type": "CreativeWork"
+		},
+		{
 			"@type": "CreativeWork",
 			"@id": "./ro-crate-metadata.jsonld",
 			"conformsTo": {
-				"@id": "https://w3id.org/ro/crate/1.0"
+				"@id": "https://w3id.org/ro/crate/1.1"
 			},
 			"about": {
 				"@id": "./"

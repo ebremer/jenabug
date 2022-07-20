@@ -14,7 +14,7 @@ import org.apache.jena.riot.RDFParser;
  *
  * @author erich
  */
-public class Bug8313 {
+public class Bug8319a {
     
     public static void main(String[] args) throws FileNotFoundException {
         Model m = ModelFactory.createDefaultModel();
@@ -22,7 +22,7 @@ public class Bug8313 {
         RDFParser.create()
                 .base("https://demo.com/")
                 .source(inputStream)
-                .lang(RDFLanguages.JSONLD)
+                .lang(RDFLanguages.JSONLD11)
                 .parse(m);
         System.out.println("Number of triples : "+m.size());
         RDFDataMgr.write(System.out, m, Lang.TTL);
