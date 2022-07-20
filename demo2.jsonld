@@ -1,0 +1,38 @@
+{
+	"@context": [
+		"https://w3id.org/ro/crate/1.1/context"
+	],
+	"@graph": [
+                {
+                    "@id" : "another/local/noextension",
+                    "url": "http://www.janedoe.com",
+                    "hasPart" : [ "http://www.ebremer.com", "another/local/noextension/snowball", "another/local/noextension/mudball"]
+                },
+		{
+			"@id": "another/local/noextension/snowball",
+			"@type": "CreativeWork"
+		},
+		{
+			"@id": "another/local/noextension/mudball",
+			"@type": "CreativeWork"
+		},
+                {
+                    "@id" : "./",
+                    "hasPart" : [ "another/local/noextension", "another/local/noextension/snowball", "another/local/noextension/mudball"]
+                },
+		{
+			"@id": "another/local/3223423423/blam.ttl",
+			"@type": "CreativeWork"
+		},
+		{
+			"@type": "CreativeWork",
+			"@id": "./ro-crate-metadata.jsonld",
+			"conformsTo": {
+				"@id": "https://w3id.org/ro/crate/1.1"
+			},
+			"about": {
+				"@id": "./"
+			}
+		}
+	]
+}
