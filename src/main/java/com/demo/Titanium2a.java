@@ -25,7 +25,7 @@ import org.apache.jena.riot.system.JenaTitanium;
 public class Titanium2a {
     
     public static void main(String[] args) throws FileNotFoundException, JsonLdError {
-        FileInputStream fos = new FileInputStream("demo.jsonld");
+        FileInputStream fos = new FileInputStream("demo2.jsonld");
         Document document = JsonDocument.of(fos);
         RdfDataset rdf = JsonLd.toRdf(document)
             .base("https://demo.com/")
